@@ -1,15 +1,15 @@
 /* we will briefly cover this function in class but it'll handle everything you need to filter your recipes */
 
 function resetFilter(){
-  //let recipeElements = Array.from(document.getElementsByClassName("RecipeBox"));
-  //console.log(recipeElements);
-  //for(let recipe of recipeElements){
-  //  recipe.style.display = "block";
-  //}
-  //let filterButtonsArray = Array.from(document.getElementsByClassName("FilterButton"));
-  //for(let filterButton of filterButtonsArray){
-  //  filterButton.classList.remove("SelectedFilter");
-  //}
+  let recipeElements = Array.from(document.getElementsByClassName("RecipeBox"));
+  console.log(recipeElements);
+  for(let recipe of recipeElements){
+    recipe.style.display = "block";
+  }
+  let filterButtonsArray = Array.from(document.getElementsByClassName("FilterButton"));
+  for(let filterButton of filterButtonsArray){
+    filterButton.classList.remove("SelectedFilter");
+  }
 }
 
 // I've given the function a name related to its functionality - I've also declared three parameters:

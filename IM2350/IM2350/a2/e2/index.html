@@ -28,7 +28,33 @@
         <button class="FilterButton" onclick='filterRecipes("author", "M", this)'>Maangchi</button>
         <button class="FilterButton" onclick='filterRecipes("author", "HM", this)'>Hetty McKinnon</button>
         <button class="FilterButton" onclick='filterRecipes("author", "CLM", this)'>Carla Lalli Music</button>
+        <button class="FilterButton" onclick='resetFilter()'>All Authors</button>
       </details>
+
+      <details class="FilterBox">
+        <summary>Skill Level</summary>
+        <button class="FilterButton" onclick='filterRecipes("skill", "Low", this)'>Low</button>
+        <button class="FilterButton" onclick='filterRecipes("skill", "Medium", this)'>Medium</button>
+        <button class="FilterButton" onclick='resetFilter()'>All Skill Levels</button>
+      </details>
+
+      <details class="FilterBox">
+        <summary>Dietary</summary>
+        <button class="FilterButton" onclick='filterRecipes("diet", "Vego", this)'>Vegetarian</button>
+        <button class="FilterButton" onclick='filterRecipes("diet", "Pesc", this)'>Pescatarian</button>
+        <button class="FilterButton" onclick='filterRecipes("diet", "Meat", this)'>Meat-Based</button>
+        <button class="FilterButton" onclick='resetFilter()'>All Dietaries</button>
+      </details>
+
+      <details class="FilterBox">
+        <summary>Course</summary>
+        <button class="FilterButton" onclick='filterRecipes("course", "main", this)'>Mains</button>
+        <button class="FilterButton" onclick='filterRecipes("course", "salad", this)'>Salads</button>
+        <button class="FilterButton" onclick='filterRecipes("course", "snack", this)'>Snacks</button>
+        <button class="FilterButton" onclick='filterRecipes("course", "dessert", this)'>Dessert</button>
+        <button class="FilterButton" onclick='resetFilter()'>All Courses</button>
+      </details>
+
 
     </div>
 
@@ -38,6 +64,9 @@
     <!-- these are fine to leave as <div>s -->
     <div class="RecipeBox"
          data-author="HM"
+         data-skill="Low"
+         data-diet="Vego"
+         data-course="main"
     >
     <!-- 
       the above tag already has one custom data category called author - to get the filter to work with other catgories you'll need
@@ -96,6 +125,10 @@
     <!-- Recipe 2 -->
     <div class="RecipeBox"
          data-author="HM"
+         data-skill="Low"
+         data-diet="Vego"
+         data-course="salad"
+          
     >
 
       <div class="RecipeLink">URL: https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846</div>
@@ -146,6 +179,9 @@
     <!-- Recipe 3 -->
     <div class="RecipeBox"
          data-author="KLA"
+         data-skill="Medium"
+         data-diet="Vego"
+         data-course="snack"
     >
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe</div>
@@ -196,6 +232,9 @@
     <!-- Recipe 4 -->
     <div class="RecipeBox"
          data-author="M"
+         data-skill="Medium"
+         data-diet="Vego"
+         data-course="snack"
     >
 
       <div class="RecipeLink">URL: https://www.maangchi.com/recipe/jjinppang</div>
@@ -245,6 +284,9 @@
     <!-- Recipe 5 -->
     <div class="RecipeBox"
          data-author="KLA"
+         data-skill="Low"
+         data-diet="Vego"
+         data-course="snack"
     >
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe</div>
@@ -293,6 +335,9 @@
     <!-- Recipe 6 -->
     <div class="RecipeBox"
          data-author="KLA"
+         data-skill="Low"
+         data-diet="Vego"
+         data-course="snack"
     >
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe</div>
@@ -343,6 +388,9 @@
     <!-- Recipe 7 -->
     <div class="RecipeBox"
          data-author="CLM"
+         data-skill="Medium"
+         data-diet="Meat"
+         data-course="main"
     >
 
       <div class="RecipeLink">URL: https://www.patreon.com/posts/recipe-hands-off-60369279</div>
@@ -392,6 +440,9 @@
     <!-- Recipe 8 -->
     <div class="RecipeBox"
          data-author="M"
+         data-skill="Low"
+         data-diet="Vego"
+         data-course="snack"
     >
 
       <div class="RecipeLink">URL: https://www.maangchi.com/recipe/kimchijeon</div>
@@ -440,6 +491,9 @@
     <!-- Recipe 9 -->
     <div class="RecipeBox"
          data-author="KLA"
+         data-skill="Medium"
+         data-diet="Vego"
+         data-course="main"
     >
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe</div>
@@ -488,6 +542,9 @@
     <!-- Recipe 10 -->
     <div class="RecipeBox"
          data-author="CLM"
+         data-skill="Low"
+         data-diet="Pesc"
+         data-course="main"
     >
 
       <div class="RecipeLink">URL: https://www.patreon.com/posts/pasta-with-sauce-45042575</div>
@@ -536,6 +593,9 @@
     <!-- Recipe 11 -->
     <div class="RecipeBox"
          data-author="M"
+         data-skill="Medium"
+         data-diet="Meat"
+         data-course="main"
     >
 
       <div class="RecipeLink">URL: https://www.maangchi.com/recipe/yangnyeom-tongdak</div>
@@ -586,6 +646,9 @@
     <!-- Recipe 12 -->
     <div class="RecipeBox"
          data-author="KLA"
+         data-skill="Medium"
+         data-diet="Meat"
+         data-course="main"
     >
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/ultimate-beef-stroganof-recipe</div>
@@ -636,6 +699,9 @@
     <!-- Recipe 13 -->
     <div class="RecipeBox"
          data-author="CLM"
+         data-skill="Medium"
+         data-diet="Vego"
+         data-course="dessert"
     >
 
       <div class="RecipeLink">URL: https://www.patreon.com/posts/recipe-vanilla-60100711</div>
@@ -686,6 +752,9 @@
     <!-- Recipe 14 -->
     <div class="RecipeBox"
          data-author="HM"
+         data-skill="Low"
+         data-diet="Vego"
+         data-course="main"
     >
 
       <div class="RecipeLink">URL: https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392</div>
