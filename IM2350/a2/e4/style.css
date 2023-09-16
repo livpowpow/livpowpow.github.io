@@ -66,9 +66,21 @@
   border: none;
   cursor: pointer;
 }
+
+/* On media streaming platforms there is a feature on the full-screen button that displays a slight increase in size of the icon when hovering over the button. */
+/* I wanted to achieve this same effect on my media player, given that I chose to add a full-screen toggle button. */
+
 .video-control-button:hover{
   background-color: var(--col-05);
+  transform: scale(1.1);
 }
+
+/* To achieve the size increase on hover, the transform code was added (as seen above) and this applies to not only the full screen button but all video control icons. */
+/* signifier: increase size of button icon 
+  affordance: toggle between normal size icon and slightly bigger when hovering
+  feedback: when the mouse hovers over the full-screen button the icon increases in size */
+
+
 .video-control-button:active{
   background-color: var(--col-06);
 }
