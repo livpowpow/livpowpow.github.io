@@ -3,6 +3,9 @@
 /* There are minor changes to the colour, size and alignment of text elements across style sheets */ 
 /* The base flex layout for the 4 core subpages is very similar with some variations in numbers where needed for containment of elements*/
 
+/* All the stylistic choices are along the basis of simplistic, retro, online aesthetics. This is represented in the black background with neon and bright colour palette. 
+
+I also chose code/computer inspired fonts to further this. The links and buttons are all very simplistic. */
 *{
    
     background-color:var(--col-01);
