@@ -1,0 +1,115 @@
+/* A lot of the various CSS pages for their respective html pages are relatively similar with some minor differences */
+/* There are minor changes to the colour, size and alignment of text elements across style sheets */ 
+
+*{
+   
+    background-color:var(--col-01);
+    margin: 0;
+    
+  }
+
+:root{
+--col-01:rgb(0, 0, 0);
+--col-02:white;
+--col-03:#00FF47;
+--col-04:#FF00A1;
+--col-05:#FFFC00;
+--col-06:#027DFD;
+--col-07:rgb(0, 255, 242);
+--col-08:rgb(118, 116, 113);
+--col-09:rgb(255, 0, 0);
+--col-10:rgb(160, 0, 0);
+
+}
+
+h1{
+    color: var(--col-04);
+    text-align: left; 
+    size: 20pt;
+    font-family: 'Press Start 2P';
+    
+}
+
+h2{
+    color: var(--col-02);
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Press Start 2P';
+
+}
+
+h3{
+    color: var(--col-05);
+    font-size: 25pt;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    
+}
+
+h4{
+    color: var(--col-05);
+    font-size:  158%;
+    text-align: right;
+    font-family: 'Press Start 2P';
+
+}
+
+p{
+    color: var(--col-03);
+    font-size: 170%;
+    font-family: 'Source Code Pro';
+
+}
+
+a, a:hover, a:visited, a:active{
+    color: inherit;
+    text-decoration: underline;
+}
+/* ^ commented on in style1.css */
+
+/* Here is where i'm starting to outline initial flex boxes to place my items in the space. */
+
+.mainhome{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--col-03);
+}
+
+
+.page-main{ 
+    display:flex;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.left-edge{
+    flex-grow: 0.5;
+
+}
+
+.box1{
+flex-grow: 2.5;
+
+
+}
+
+.box2{
+flex-grow: 1;
+}
+
+.box3 {
+    flex-grow: 4;
+}
+
+.page-footer {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.page-footer img{
+    display: block;
+    width: 30%;
+    height: auto;
+}

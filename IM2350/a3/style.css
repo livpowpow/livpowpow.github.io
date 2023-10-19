@@ -1,0 +1,162 @@
+
+*{
+   
+    background-color:var(--col-01);
+    margin: 0;
+    
+  }
+
+:root{
+--col-01:rgb(0, 0, 0);
+--col-02:white;
+--col-03:#00FF47;
+--col-04:#FF00A1;
+--col-05:#FFFC00;
+--col-06:#027DFD;
+--col-07:rgb(0, 255, 242);
+--col-08:rgb(118, 116, 113);
+
+}
+
+/* I built this colour palette using colours that fit into my aimed aesthetic; that being, retro, traditional computer/code styles
+i.e. neon and brights colours on black backgrounds */
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    src: url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+}
+
+/* The  two fonts I chose were based on the stylistic choices I decided on early (and outlined in my presentation); I chose two fonts that are familiar and related to the retro, computer aesthetic */
+
+h1{
+    color: var(--col-04);
+    text-align: center; 
+    size: 20pt;
+    font-family: 'Press Start 2P';
+}
+
+h2{
+    color: var(--col-05);
+    text-align: right;
+    size: 12pt;
+    font-family: 'Press Start 2P';
+
+}
+
+h3{
+    color: var(--col-02);
+    size: 10pt;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    
+    
+}
+
+p{
+    color: var(--col-02);
+    font-family: 'Source Code Pro';
+
+}
+
+a:hover{
+    text-decoration: underline;
+    
+}
+
+/* The colours, sizes and text-alignments vary for each of the heading options across the various style sheets associated with each given subpage */
+
+
+/* Here is where I outline my cflex containers to evenly distribute my elements */
+.mainstyle{
+    background-color: var(--col-01);
+}
+
+.mainhome{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--col-01);
+}
+
+.mainhome > * {
+    padding: 20px;
+
+}
+
+.page-main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.chunk1{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.chunk2{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+
+}
+
+.chunk3{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.chunk4{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+
+.chunk3{
+    flex-grow: 10%;
+    color: var(--col-02);
+    width: 200px;
+}
+
+/* MAIN SCREEN TEXT CSS */
+
+
+    
+.text1{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+.text2{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+
+.text3{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+
+.text4{
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+
+ 
+

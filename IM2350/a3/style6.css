@@ -1,0 +1,50 @@
+
+/* A lot of the various CSS pages for their respective html pages are relatively similar with some minor differences */
+/* There are minor changes to the colour, size and alignment of text elements across style sheets */ 
+
+*{
+   
+    background-color:var(--col-01);
+    margin: 0;
+    
+  }
+
+:root{
+--col-01:rgb(0, 0, 0);
+--col-02:white;
+--col-03:#00FF47;
+--col-04:#FF00A1;
+--col-05:#FFFC00;
+--col-06:#027DFD;
+--col-07:rgb(0, 255, 242);
+--col-08:rgb(118, 116, 113);
+--col-09:rgb(255, 0, 0);
+--col-10:rgb(160, 0, 0);
+
+}
+
+p{
+    color: var(--col-08);
+    margin-left: 3cm;
+    font-family: 'Source Code Pro';
+}
+
+h1{
+    color: var(--col-02);
+    margin-left: 1cm;
+    font-family: 'Press Start 2P';
+}
+
+h2{
+    color: var(--col-08);
+    text-align: right;
+    font-size: 90%;
+    font-family: 'Press Start 2P';
+   
+}
+
+a, a:hover, a:visited, a:active{
+    color: inherit;
+    text-decoration: underline;
+}
+/* ^ commented on in style1.css */

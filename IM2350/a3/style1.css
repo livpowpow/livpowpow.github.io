@@ -1,0 +1,111 @@
+
+/* A lot of the various CSS pages for their respective html pages are relatively similar with some minor differences */
+/* There are minor changes to the colour, size and alignment of text elements across style sheets */ 
+/* The base flex layout for the 4 core subpages is very similar with some variations in numbers where needed for containment of elements*/
+
+*{
+   
+    background-color:var(--col-01);
+    margin: 0;
+    
+  }
+
+:root{
+--col-01:rgb(0, 0, 0);
+--col-02:white;
+--col-03:#00FF47;
+--col-04:#FF00A1;
+--col-05:#FFFC00;
+--col-06:#027DFD;
+--col-07:rgb(0, 255, 242);
+--col-08:rgb(118, 116, 113);
+--col-09:rgb(255, 0, 0);
+--col-10:rgb(160, 0, 0);
+
+}
+
+h1{
+    font-family: 'Code Font';
+    color: var(--col-04);
+    text-align: left; 
+    size: 20pt;
+    font-family: 'Press Start 2P';
+    
+}
+
+h2{
+    font-family: 'Code Font';
+    color: var(--col-03);
+    text-align: right;
+    size: 12pt;
+    font-family: 'Press Start 2P';
+
+}
+
+h3{
+    font-family: 'Code Font';
+    color: var(--col-05);
+    font-size: 22pt;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    
+}
+
+p{
+    font-family: 'Code Font';
+    color: var(--col-06);
+    font-size: 170%;
+    font-family: 'Source Code Pro';
+
+}
+
+a, a:hover, a:visited, a:active{
+    color: inherit;
+    text-decoration: underline;
+}
+/*  ^ This element is used across the subpages; used to stop in-text links from changing colour once visited. 
+Links within text are semi-hidden with only apparent difference being underlining. 
+
+I wanted the links between sites to be visible, but not super obvious, so it is still almost like the user is finding the hidden pathways between sites. 
+But didn't want to completley eliminate all ability to tell there is a button.
+
+the underline also gives a subtle feature; aligning with the simplistic style choices across all other areas of the site.
+
+*/
+
+
+/* Here is where i'm starting to outline initial flex boxes to place my items in the space. */
+
+.mainhome{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--col-01);
+}
+
+
+.page-main{ 
+    display:flex;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.left-edge{
+    flex-grow: 0.5;
+
+}
+
+.box1{
+flex-grow: 3;
+
+
+}
+
+.box2{
+flex-grow: 3;
+}
+
+.box3 {
+    flex-grow: 2;
+}
+
